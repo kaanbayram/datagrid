@@ -1,4 +1,5 @@
 import React from 'react';
+import { DataGridBaseComponent } from './DataGrid/Components';
 
 
 export default class App extends React.Component {
@@ -11,6 +12,7 @@ export default class App extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <DataGridBaseComponent />
             </React.Fragment>
         );
     }

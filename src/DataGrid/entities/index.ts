@@ -1,0 +1,1 @@
+export { IDataGridBaseComponentsProps } from './IDataGridBaseComponentsProps'
