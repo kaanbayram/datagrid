@@ -11,19 +11,41 @@ export default class DataGridBaseComponent extends React.Component<IDataGridBase
     render() {
         return (
             <table>
+
                 <thead>
+                    
                     <div>Header, ToolbarButtons</div>
 
                 </thead>
+
                 <thead>
                     <tr>
+
                         <th>ActionButtons</th>
                         <th>Column1</th>
                         <th>Column2</th>
+
                     </tr>
                 </thead>
 
                 <tbody>
+
+                    <tr>
+
+                        <th></th>
+
+                        <th>3</th>
+                        <th>4</th>
+
+                    </tr>
+                    
+                    <tr>
+                        <th></th>
+
+                        <th>3</th>
+                        <th>4</th>
+                    </tr>
+
                     <tr>
 
                         <th></th>
@@ -31,19 +53,7 @@ export default class DataGridBaseComponent extends React.Component<IDataGridBase
                         <th>3</th>
                         <th>4</th>
                     </tr>
-                    <tr>
-                        <th></th>
 
-                        <th>3</th>
-                        <th>4</th>
-                    </tr>
-                    <tr>
-
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-                    </tr>
                     <tr>
 
                         <th></th>
