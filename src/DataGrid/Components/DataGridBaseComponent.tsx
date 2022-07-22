@@ -12,8 +12,10 @@ export default class DataGridBaseComponent extends React.Component<IDataGridBase
         return (
             <table>
 
+                <caption>DataGrid Caption</caption>
+                
                 <thead>
-                    
+
                     <div>Header, ToolbarButtons</div>
 
                 </thead>
@@ -38,7 +40,7 @@ export default class DataGridBaseComponent extends React.Component<IDataGridBase
                         <th>4</th>
 
                     </tr>
-                    
+
                     <tr>
                         <th></th>
 
