@@ -1,0 +1,1 @@
+export { ITableProps } from './ITableProps' 

@@ -1,0 +1,1 @@
+export { IFooterProps } from './IFooterProps'

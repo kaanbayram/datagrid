@@ -1,75 +1,65 @@
 import React from 'react';
 import { IDataGridBaseComponentsProps } from '../entities';
 import '../assets/dataGridBaseComponentStyles.scss'
+import { Caption } from './Caption';
+import { Header } from './Header';
+import { Body } from './Body';
+import { Footer } from './Footer';
+import { Table } from './Table';
 
 export default class DataGridBaseComponent extends React.Component<IDataGridBaseComponentsProps, {}>{
 
     constructor(props: IDataGridBaseComponentsProps) {
         super(props);
+
+        this.getCaption = this.getCaption.bind(this);
+        this.getHeader = this.getHeader.bind(this);
+        this.getBody = this.getBody.bind(this);
+        this.getFooter = this.getFooter.bind(this);
+    }
+
+    getCaption() {
+        return (
+            <Caption
+                caption={<div>DataGrid Caption</div>}
+            />
+        );
+    }
+
+    getHeader() {
+        return (
+            <Header
+                toolbarButtons={[]}
+                columns={[]}
+            />
+        );
+    }
+
+    getBody() {
+        return (
+            <Body
+                rows={[]}
+            />
+        );
+    }
+
+    getFooter() {
+        return (
+            <Footer
+            />
+        );
     }
 
     render() {
         return (
-            <table>
-
-                <caption>DataGrid Caption</caption>
-                
-                <thead>
-
-                    <div>Header, ToolbarButtons</div>
-
-                </thead>
-
-                <thead>
-                    <tr>
-
-                        <th>ActionButtons</th>
-                        <th>Column1</th>
-                        <th>Column2</th>
-
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-
-                    </tr>
-
-                    <tr>
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-                    </tr>
-
-                    <tr>
-
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-                    </tr>
-
-                    <tr>
-
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-                    </tr>
-
-                </tbody>
-
-                <tfoot>
-                    this area gonna be full of pagination etc.
-                </tfoot>
-            </table>
+            <>
+                <Table
+                    caption={this.getCaption()}
+                    header={this.getHeader()}
+                    body={this.getBody()}
+                    footer={this.getFooter()}
+                />
+            </>
         )
     }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { IColumnsProps } from "../entities";
+import { IColumnsProps } from "./entities";
 
 
 

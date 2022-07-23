@@ -1,0 +1,1 @@
+export { IHeaderProps } from './IHeaderProps'

@@ -17,7 +17,6 @@ export default class App extends React.Component {
                     captiton={<div>Test</div>}
                     rows={rows}
                     columns={columns}
-
                 />
             </React.Fragment>
         );

@@ -1,0 +1,6 @@
+interface IFooterProps {
+
+}
+
+
+export { IFooterProps }

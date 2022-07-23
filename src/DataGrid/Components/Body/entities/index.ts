@@ -1,0 +1,1 @@
+export { IBodyProps } from './IBodyProps';

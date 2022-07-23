@@ -1,0 +1,1 @@
+export { ICaptionProps } from './ICaptionProps'
