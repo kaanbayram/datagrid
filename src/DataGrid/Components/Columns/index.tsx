@@ -1,9 +1,9 @@
 import React from "react";
-import { IColumnsProps } from "./entities";
+import { IColumn, IColumnsProps } from "./entities";
 
 
 
-export default class Columns extends React.Component<IColumnsProps, {}> {
+class Columns extends React.Component<IColumnsProps, {}> {
     constructor(props: IColumnsProps) {
         super(props);
     }
@@ -14,3 +14,5 @@ export default class Columns extends React.Component<IColumnsProps, {}> {
         );
     }
 }
+
+export { Columns, IColumnsProps, IColumn };

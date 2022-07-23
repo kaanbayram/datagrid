@@ -1,6 +1,8 @@
+import { IColumn } from "../..";
+
 interface IHeaderProps {
     toolbarButtons?: any[];
-    columns: any[];
+    columns: IColumn[];
 }
 
 export { IHeaderProps }
