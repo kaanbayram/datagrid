@@ -40,6 +40,7 @@ export default class DataGridBaseComponent extends React.Component<IDataGridBase
         return (
             <Body
                 rows={rows}
+                columns={columns}
             />
         );
     }
