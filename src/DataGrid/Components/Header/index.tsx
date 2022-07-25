@@ -27,7 +27,10 @@ class Header extends React.Component<IHeaderProps, {}>{
     }
 
     getColumns() {
-        return this.props.columns.map((column) => {
+
+        const orderedColumns = this.props.columns.sort((a, b) => b.order - a.order);
+
+        return orderedColumns.map((column) => {
 
             if (!column.caption) {
                 return <th></th>;

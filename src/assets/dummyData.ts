@@ -63,28 +63,28 @@ const columns = [
     {
         name: "id",
         type: "",
-        order: 0,
+        order: 2,
         isUniqDataField: true,
         caption: "Id",
     },
     {
         name: "name",
         type: "",
-        order: 1,
+        order: 3,
         isUniqDataField: false,
         caption: "Name",
     },
     {
         name: "surname",
         type: "",
-        order: 2,
+        order: 1,
         isUniqDataField: false,
         caption: "Surname",
     },
     {
         name: "birthDate",
         type: "",
-        order: 3,
+        order: 0,
         isUniqDataField: false,
         caption: "Birth Date",
     }

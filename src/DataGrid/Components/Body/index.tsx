@@ -15,29 +15,23 @@ class Body extends React.Component<IBodyProps, {}>{
 
     getRows() {
 
-        const columnLength = this.props.columns.length;
-        
+        const sortedColumns = this.props.columns.sort((a, b) => b.order - a.order);
 
-        
+        return this.props.rows.map((row) => {
 
-        this.props.rows.forEach((row) => {
+            const rowValues: any[] = [<th></th>];
 
-            
-            
-            const rows: any[] = [];
+            sortedColumns.forEach((column) => {
+                rowValues.push(<th>{row[column.name]}</th>);
+            });
 
-
-            
+            return (
                 <tr>
-                    <th></th>
-                    <th>{row.id}</th>
-                    <th>{row.name}</th>
-                    <th>{row.surname}</th>
-                    <th>{row.birthDate}</th>
+                    {[...rowValues]}
                 </tr>
-            
-        })
-        return rows;
+            )
+
+        });
     }
 
 
