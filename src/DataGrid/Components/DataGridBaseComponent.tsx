@@ -6,6 +6,7 @@ import { Header } from './Header';
 import { Body } from './Body';
 import { Footer } from './Footer';
 import { Table } from './Table';
+import { columns, rows } from '../../assets/dummyData';
 
 export default class DataGridBaseComponent extends React.Component<IDataGridBaseComponentsProps, {}>{
 
@@ -30,7 +31,7 @@ export default class DataGridBaseComponent extends React.Component<IDataGridBase
         return (
             <Header
                 toolbarButtons={[]}
-                columns={[]}
+                columns={columns}
             />
         );
     }
@@ -38,7 +39,7 @@ export default class DataGridBaseComponent extends React.Component<IDataGridBase
     getBody() {
         return (
             <Body
-                rows={[]}
+                rows={rows}
             />
         );
     }

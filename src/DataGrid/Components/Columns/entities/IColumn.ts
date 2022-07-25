@@ -1,7 +1,7 @@
 import { IDictionary } from "../../../../common/entities";
 
 interface IColumn {
-  id: string;
+  // id: string;
   name: string;
   caption: IDictionary<string> | React.ReactElement | string;
 }

@@ -1,0 +1,1 @@
+export { LanguageManager, ILanguage } from './LanguageManager'
