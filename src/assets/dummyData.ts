@@ -88,6 +88,16 @@ const columns = [
         isUniqDataField: false,
         caption: "Birth Date",
     }
-]
+];
 
-export { rows, columns }
+const DataGridProps: any = {
+    editing: {
+        enabled: true,
+        mode: "",
+        allowAdd: true,
+        allowDelete: true,
+        allowEdit: true
+    }
+}
+
+export { rows, columns, DataGridProps }

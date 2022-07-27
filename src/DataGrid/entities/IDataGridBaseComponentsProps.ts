@@ -6,7 +6,14 @@ interface IDataGridBaseComponentsProps {
     rows: IDictionary<any>;
     columns: any;//;
     pagination?: any; //
-
+    editing: IEditingProps
 }
 
-export { IDataGridBaseComponentsProps };
+interface IEditingProps {
+    enabled: boolean;
+    allowAdd: boolean;
+    allowDelete: boolean;
+    allowEdit: boolean;
+}
+
+export { IDataGridBaseComponentsProps, IEditingProps };

@@ -1,18 +1,26 @@
 {
-    "compilerOptions": {
-      "esModuleInterop": true,
-      "jsx": "react",
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "lib": [
-        "dom",
-        "esnext"
-      ],
-      "strict": true,
-      "sourceMap": true,
-      "target": "ES6",
-    },
-    "exclude": [
-      "node_modules"
-    ]
-  }
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "strict": true,
+    "sourceMap": true,
+    "target": "ES6",
+  },
+  // "include": [
+  //   "src",
+  //   "src/@types/custom.d.ts"
+  // ],
+  "exclude": [
+    "node_modules"
+  ]
+}

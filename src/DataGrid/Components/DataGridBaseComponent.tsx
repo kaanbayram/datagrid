@@ -41,6 +41,7 @@ export default class DataGridBaseComponent extends React.Component<IDataGridBase
             <Body
                 rows={rows}
                 columns={columns}
+                editing={this.props.editing}
             />
         );
     }

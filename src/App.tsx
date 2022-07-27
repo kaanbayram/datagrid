@@ -1,6 +1,6 @@
 import React from 'react';
 import { DataGridBaseComponent } from './DataGrid/Components';
-import { rows, columns } from './assets/dummyData'
+import { rows, columns, DataGridProps } from './assets/dummyData'
 
 
 export default class App extends React.Component {
@@ -17,6 +17,13 @@ export default class App extends React.Component {
                     captiton={<div>Test</div>}
                     rows={rows}
                     columns={columns}
+                    editing={{
+                        enabled: DataGridProps.editing.enabled,
+                        // mode: DataGridProps.editing.mode,
+                        allowAdd: DataGridProps.editing.allowAdd,
+                        allowDelete: DataGridProps.editing.allowDelete,
+                        allowEdit: DataGridProps.editing.allowEdit
+                    }}
                 />
             </React.Fragment>
         );

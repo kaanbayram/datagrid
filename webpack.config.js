@@ -16,6 +16,9 @@ module.exports = {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/,
+                // options: {
+                //     configFile: "tsconfig.webpack.json"
+                // }
             },
             {
                 test: /\.s[ac]ss$/i,
@@ -41,6 +44,17 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ["babel-loader"],
             },
+            {
+                test: /\.(png|jp(e*)g|svg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'images/[hash]-[name].[ext]',
+                        },
+                    },
+                ],
+            }
         ],
     },
     resolve: {

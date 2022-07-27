@@ -1,7 +1,6 @@
 import { IBodyProps } from "./entities";
 import React from "react";
-
-
+import { ReactComponent as PlusSolidIcon } from '../../../assets/plus-solid.svg';
 
 class Body extends React.Component<IBodyProps, {}>{
 
@@ -11,6 +10,16 @@ class Body extends React.Component<IBodyProps, {}>{
         this.getRows = this.getRows.bind(this);
     }
 
+    getActionButtons() {
+
+
+
+        return (
+            // <></>
+            <div><PlusSolidIcon /></div>
+            // <img src={PlusSolidIcon}></img>
+        );
+    }
 
 
     getRows() {
@@ -19,7 +28,7 @@ class Body extends React.Component<IBodyProps, {}>{
 
         return this.props.rows.map((row) => {
 
-            const rowValues: any[] = [<th></th>];
+            const rowValues: any[] = [<th>{this.getActionButtons()}</th>];
 
             sortedColumns.forEach((column) => {
                 rowValues.push(<th>{row[column.name]}</th>);
@@ -30,7 +39,6 @@ class Body extends React.Component<IBodyProps, {}>{
                     {[...rowValues]}
                 </tr>
             )
-
         });
     }
 
@@ -39,41 +47,7 @@ class Body extends React.Component<IBodyProps, {}>{
         return (
             <>
                 <tbody>
-
                     {this.getRows()}
-
-                    {/* <tr>
-
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-
-                    </tr>
-
-                    <tr>
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-                    </tr>
-
-                    <tr>
-
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-                    </tr>
-
-                    <tr>
-
-                        <th></th>
-
-                        <th>3</th>
-                        <th>4</th>
-                    </tr> */}
-
                 </tbody>
             </>
         );

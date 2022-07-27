@@ -1,1 +1,1 @@
-export { IDataGridBaseComponentsProps } from './IDataGridBaseComponentsProps'
+export { IDataGridBaseComponentsProps, IEditingProps } from './IDataGridBaseComponentsProps'
