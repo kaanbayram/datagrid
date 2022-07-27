@@ -45,7 +45,7 @@ module.exports = {
                 use: ["babel-loader"],
             },
             {
-                test: /\.(png|jp(e*)g|svg|gif)$/,
+                test: /\.(png|jp(e*)g|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -54,7 +54,11 @@ module.exports = {
                         },
                     },
                 ],
-            }
+            },
+            {
+                test: /\.svg$/,
+                use: ['@svgr/webpack'],
+            },
         ],
     },
     resolve: {

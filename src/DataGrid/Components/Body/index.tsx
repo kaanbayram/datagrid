@@ -1,6 +1,8 @@
 import { IBodyProps } from "./entities";
 import React from "react";
-import { ReactComponent as PlusSolidIcon } from '../../../assets/plus-solid.svg';
+// import { ReactComponent as PlusSolidIcon } from '../../../assets/plus-solid.svg';
+import PlusSolidIcon from '../../../assets/plus-solid.svg';
+
 
 class Body extends React.Component<IBodyProps, {}>{
 
@@ -16,7 +18,9 @@ class Body extends React.Component<IBodyProps, {}>{
 
         return (
             // <></>
-            <div><PlusSolidIcon /></div>
+            <div>
+                <PlusSolidIcon />
+            </div>
             // <img src={PlusSolidIcon}></img>
         );
     }
