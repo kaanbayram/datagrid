@@ -1,7 +1,9 @@
 import { IBodyProps } from "./entities";
 import React from "react";
 // import { ReactComponent as PlusSolidIcon } from '../../../assets/plus-solid.svg';
-import PlusSolidIcon from '../../../assets/plus-solid.svg';
+import AddIcon from '../../../assets/plus-solid.svg';
+import EditIcon from '../../../assets/pencil-solid.svg';
+import DeleteIcon from '../../../assets/trash-can-solid.svg';
 
 
 class Body extends React.Component<IBodyProps, {}>{
@@ -14,14 +16,14 @@ class Body extends React.Component<IBodyProps, {}>{
 
     getActionButtons() {
 
-
+        const style = { display: "flex", width: "100%", justifyContent: "center", alignItems: "center" };
 
         return (
-            // <></>
-            <div>
-                <PlusSolidIcon />
+            <div style={{ display: "flex", width: "100%", justifyContent: "center", alignItems: "center" }}>
+                {this.props.editing.allowAdd && <div style={{ margin: "6px", ...style }}><AddIcon /></div>}
+                {this.props.editing.allowDelete && <div style={{ margin: "6px", ...style }}><DeleteIcon /></div>}
+                {this.props.editing.allowEdit && <div style={{ margin: "6px", ...style }}> <EditIcon /></div>}
             </div>
-            // <img src={PlusSolidIcon}></img>
         );
     }
 

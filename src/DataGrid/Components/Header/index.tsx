@@ -19,7 +19,7 @@ class Header extends React.Component<IHeaderProps, {}>{
         return (
             <thead>
                 <tr>
-                    <th>ActionButtons</th>
+                    <th style={{ width: "50px" }}></th>
                     {this.getColumns()}
                 </tr>
             </thead>
