@@ -1,7 +1,7 @@
 import React from "react";
 import { IDictionary, LanguageManager } from "../../../common";
 import { IHeaderProps } from "./entities";
-
+import IconAdd from '../../../assets/plus-solid.svg';
 
 
 class Header extends React.Component<IHeaderProps, {}>{
@@ -52,7 +52,7 @@ class Header extends React.Component<IHeaderProps, {}>{
             <>
                 <thead>
 
-                    <div>Header, ToolbarButtons</div>
+                    <div style={{ display: "flex", width: "100%" }} >Header, ToolbarButto ns <div style={{ float: "right" }}><IconAdd /></div></div>
 
                 </thead>
 
