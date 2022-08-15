@@ -50,12 +50,27 @@ class Header extends React.Component<IHeaderProps, {}>{
     render() {
         return (
             <>
-                <thead>
+""
+                <thead style={{ width: "100px" }}>
 
-                    <div style={{ display: "flex", width: "100%" }} >Header, ToolbarButto ns <div style={{ float: "right" }}><IconAdd /></div></div>
+                    <tr style={{ width: "100" }}>
+                        <div style={{ width: "100%", display: "flex", borderStyle: "solid", borderWidth: "0.5px" }}>
+                            <div style={{ width: "100%", cursor: "pointer", display: "flex", float: "right" }} >Add <div><IconAdd /></div></div>
+                        </div>
+                        {/* <th style={{ widows:"100%"}}> <div style={{ width: "100%", cursor: "pointer" }} >Add <div style={{ float: "right" }}><IconAdd /></div></div></th> */}
+                    </tr>
+
+                    {/* 
+                    <th style={{ border: "none" }}> <div style={{ width: "100%", cursor: "pointer" }} >Add <div style={{ float: "right" }}><IconAdd /></div></div></th>
+
+                    <th style={{ border: "none" }}> <div style={{ width: "100%", cursor: "pointer" }} >Add <div style={{ float: "right" }}><IconAdd /></div></div></th>
+
+                    <th style={{ border: "none" }}> <div style={{ width: "100%", cursor: "pointer" }} >Add <div style={{ float: "right" }}><IconAdd /></div></div></th>
+
+                    <th style={{ border: "none" }}> <div style={{ width: "100%", cursor: "pointer" }} >Add <div style={{ float: "right" }}><IconAdd /></div></div></th> 
+                    */}
 
                 </thead>
-
                 {this.getColumnHeaders()}
             </>
         );

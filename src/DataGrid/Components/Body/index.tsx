@@ -21,8 +21,8 @@ class Body extends React.Component<IBodyProps, {}>{
         return (
             <div style={{ display: "flex", width: "100%", justifyContent: "center", alignItems: "center" }}>
                 {/* {this.props.editing.allowAdd && <div style={{ margin: "6px", ...style }}><CheckIcon /></div>} */}
-                {this.props.editing.allowDelete && <div style={{ margin: "6px", ...style }}><DeleteIcon /></div>}
-                {this.props.editing.allowEdit && <div style={{ margin: "6px", ...style }}> <EditIcon /></div>}
+                {this.props.editing.allowDelete && <div style={{ margin: "6px", cursor: "pointer", ...style }}><DeleteIcon /></div>}
+                {this.props.editing.allowEdit && <div style={{ margin: "6px", cursor: "pointer", ...style }}> <EditIcon /></div>}
             </div>
         );
     }
