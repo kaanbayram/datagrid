@@ -1,7 +1,7 @@
 import React from "react";
 import { ICaptionProps } from "./entities";
 import IconAdd from '../../../assets/plus-solid.svg';
-
+import * as styles from './assets/headerStyles.scss'
 
 class Caption extends React.Component<ICaptionProps, {}> {
 
@@ -13,8 +13,8 @@ class Caption extends React.Component<ICaptionProps, {}> {
         return (
             <caption>
 
-                
-                <div style={{ width: "100%", height: "70px", position: "relative", borderStyle: "solid", borderWidth: "0.5px", borderColor: "#bfbfbf" }}>
+
+                <div className={styles.headerContainer}>
                     <div style={{
                         margin: "auto", position: "absolute", top: 0, bottom: 0, right: 10,
                         height: "30px", width: "30px", cursor: "pointer", float: "right", display: "flex",
